@@ -1,0 +1,264 @@
+.name_box {
+  display: flex;
+
+  .name_left_box {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+    border-radius: 4px 4px 4px 4px;
+
+    img {
+      border-radius: 4px 4px 4px 4px;
+    }
+  }
+
+  .name_centre_box {
+    margin-right: 37px;
+
+    .name_centre_title {
+      width: 184px;
+      height: 21px;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap; //溢出不换行
+    }
+
+    .name_centre_nation {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+
+      .name_centre_nation_title {
+        display: inline-block;
+        width: 59px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+
+        .nation_icon_img {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+        }
+
+      }
+
+      .name_centre_img {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .name_centre_box_1 {
+    margin-right: 49px;
+
+    .name_centre_box_1_title {
+      width: 152px;
+      height: 21px;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap; //溢出不换行
+    }
+
+    .name_centre_box_1_type {
+      margin-top: 14px;
+    }
+  }
+
+  .name_right_box {
+    .name_right_box_title {
+      display: flex;
+      align-items: center;
+
+      .name_right_icon {
+        margin-left: 13px;
+
+        .name_right_title_icon {
+          width: 16px;
+          height: 16px;
+          margin-right: 8px;
+
+          svg {
+            width: 100%;
+            height: 100%;
+            color: #555555;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .name_right_box_type {
+      margin-top: 14px;
+      width: 190px;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap; //溢出不换行
+    }
+  }
+}
+
+
+.time_remaining_box {
+  .time_remaining_top_right {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #666666;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    color: #666666;
+    font-size: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .product_price_body {
+    color: #F3294D;
+    margin-top: 14px;
+    margin-left: 5px;
+  }
+
+  .product_price_body_1 {
+    color: #EF6706;
+    margin-top: 14px;
+    margin-left: 5px;
+  }
+}
+
+.state_box {
+  display: flex;
+  margin-left: -34px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .state_botoom_img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+
+    img {
+      border-radius: 50%;
+    }
+
+    .state_top_icon {
+      width: 30px;
+      height: 30px;
+
+      .state_top_icon_img {
+        position: absolute;
+        top: -3px;
+        right: -8px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.product_price_bottom {
+  margin-top: 13px;
+  text-decoration: line-through;
+}
+
+// 聊天框
+.chatDrawer_box {
+  .chatDrawer_top_title {
+    display: flex;
+    align-items: center;
+
+    .chatDrawer_top_title_left {
+      width: 2px;
+      height: 13px;
+      background: #098D72;
+    }
+
+    span {
+      font-size: 16px;
+      margin-left: 8px;
+    }
+  }
+
+  .chatDrawer_body {
+    // width: 483px;
+    font-size: 14px;
+    margin: 30px 0;
+    min-height: 750px;
+    overflow: auto;
+    .chatDrawer_body_img {
+      width: 40px;
+      height: 40px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .chatDrawer_body_content {
+      max-width: 418px;
+      
+      .chatDrawer_body_content_top {
+        display: inline-block;
+        background-color: #F4F4F4;
+        border-radius: 2px 2px 2px 2px;
+        padding: 10px 5px;
+      }
+      .chatDrawer_body_content_top1 {
+        float: right;
+        display: block;
+        border-radius: 2px 2px 2px 2px;
+        background: rgba(9,141,114,0.5);
+        padding: 10px 5px;
+      }
+
+    }
+    .chatDrawer_body_content_time {
+      margin-top: 10px;
+    }
+    .chatDrawer_body_left {
+      margin-top: 10px;
+      float: left;
+      display: flex;
+      .chatDrawer_body_img {
+        margin-right: 6px;
+      }
+    }
+    .chatDrawer_body_right {
+      margin-top: 10px;
+      float: right;
+      display: flex;
+      .chatDrawer_body_content_time {
+        float: right;
+      }
+      .chatDrawer_body_img {
+        margin-left: 6px;
+      }
+    }
+  }
+
+.chatDrawer_bottom {
+  .chatDrawer_bottom_form {
+    display: flex;
+  
+    .chatDrawer_form_input {
+      width: 368px;
+      height: 32px;
+    }
+  
+    .chat_btn {
+      margin-left: 20px;
+  
+      .el-button {
+        width: 96px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+}
